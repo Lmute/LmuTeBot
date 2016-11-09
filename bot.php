@@ -212,7 +212,7 @@ Forward($admin,$chat_id,$message_id);
 Sendmessage($chat_id,"Pm You send to Pv Admin ✅");
 }else{
   
-Sendmessage($chat_id,"*You Are Banned*");
+Sendmessage($chat_id,"❌*You Are Banned*❌");
 
     }
     }
@@ -226,10 +226,10 @@ $membersid= explode("\n",$txt);
 $substr = substr($text, 0, 28);
 	if (!in_array($chat_id,$membersid)) {
 Forward($admin,$chat_id,$message_id);
-Sendmessage($chat_id,"Contact Send");	
+Sendmessage($chat_id,"Shomare mord nazar ersal shod ✅");	
 }else{
   
-Sendmessage($chat_id,"*You Are Banned*");	
+Sendmessage($chat_id,"❌*You Are Banned*❌");	
 
 }
     }
@@ -245,10 +245,10 @@ $membersid= explode("\n",$txt);
 $substr = substr($text, 0, 28);
 	if (!in_array($chat_id,$membersid)) {
 Forward($admin,$chat_id,$message_id);
-Sendmessage($chat_id,"Contact Send");	
+Sendmessage($chat_id,"sticker mord nazar ersal shod ✅");	
 }else{
   
-Sendmessage($chat_id,"*You Are Banned*");	
+Sendmessage($chat_id,"❌*You Are Banned*❌");	
 
 }
     }
@@ -265,10 +265,10 @@ $membersid= explode("\n",$txt);
 $substr = substr($text, 0, 28);
 	if (!in_array($chat_id,$membersid)) {
 Forward($admin,$chat_id,$message_id);
-Sendmessage($chat_id,"Contact Send");	
+Sendmessage($chat_id,"photo mord nazar ersal shod ✅");	
 }else{
   
-Sendmessage($chat_id,"*You Are Banned*");	
+Sendmessage($chat_id,"❌*You Are Banned*❌");	
 
 }
     }
@@ -284,10 +284,10 @@ $membersid= explode("\n",$txt);
 $substr = substr($text, 0, 28);
 	if (!in_array($chat_id,$membersid)) {
 Forward($admin,$chat_id,$message_id);
-Sendmessage($chat_id,"voice Send");	
+Sendmessage($chat_id,"voice mord nazar ersal shod ✅");	
 }else{
   
-Sendmessage($chat_id,"*You Are Banned*");	
+Sendmessage($chat_id,"❌*You Are Banned*❌");	
 
 }
     }
@@ -302,10 +302,10 @@ $membersid= explode("\n",$txt);
 $substr = substr($text, 0, 28);
 	if (!in_array($chat_id,$membersid)) {
 Forward($admin,$chat_id,$message_id);
-Sendmessage($chat_id,"video Send);	
+Sendmessage($chat_id,"video mord nazar ersal shod ✅");	
 }else{
   
-Sendmessage($chat_id,"*You Are Banned*");	
+Sendmessage($chat_id,"❌*You Are Banned*❌");	
 
 }
     }
@@ -345,10 +345,10 @@ $membersid= explode("\n",$txt);
 $substr = substr($text, 0, 28);
 	if (!in_array($chat_id,$membersid)) {
 Forward($admin,$chat_id,$message_id);
-Sendmessage($chat_id,"location Send");	
+Sendmessage($chat_id,"location mord nazar ersal shod ✅");	
 }else{
   
-Sendmessage($chat_id,"*You Are Banned*");	
+Sendmessage($chat_id,"❌*You Are Banned*❌");	
 
 }
     }
@@ -357,7 +357,7 @@ Sendmessage($chat_id,"*You Are Banned*");
     	if($textmessage != "/ban" && $textmessage != "/unban")
     	{
 sendmessage($rpto,"$textmessage");
-sendmessage($chat_id,"Send");
+sendmessage($chat_id,"پیغام شما ارسال شد");
     	}
     	else
     	{
@@ -373,7 +373,7 @@ sendmessage($chat_id,"Send");
     	file_put_contents('banlist.txt',$addd);
     	{
 sendmessage($rpto,"*You Are Added to block list*");
-sendmessage($chat_id,"Banned");
+sendmessage($chat_id,"به لیست بلاک شده ها افزوده شد");
         }
     		}
 }
@@ -395,7 +395,7 @@ sendmessage($chat_id,"Banned");
     	file_put_contents('banlist.txt',$adddd);
 }
 sendmessage($rpto,"*You Are UnBanned*");
-sendmessage($chat_id,"UnBanned");
+sendmessage($chat_id,"از لیست بلاک شده ها پاک شد");
     		}
     	}
 	}

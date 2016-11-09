@@ -249,7 +249,7 @@ $membersid= explode("\n",$txt);
 $substr = substr($text, 0, 28);
 	if (!in_array($chat_id,$membersid)) {
 Forward($admin,$chat_id,$message_id);
-Sendmessage($chat_id,"Sticker Send");	
+Sendmessage($chat_id,"sticker Send");	
 }else{
   
 Sendmessage($chat_id,"*You Are Banned*");	
@@ -269,7 +269,7 @@ $membersid= explode("\n",$txt);
 $substr = substr($text, 0, 28);
 	if (!in_array($chat_id,$membersid)) {
 Forward($admin,$chat_id,$message_id);
-Sendmessage($chat_id,"Photo Send");	
+Sendmessage($chat_id,"photo Send");	
 }else{
   
 Sendmessage($chat_id,"*You Are Banned*");	
@@ -288,7 +288,7 @@ $membersid= explode("\n",$txt);
 $substr = substr($text, 0, 28);
 	if (!in_array($chat_id,$membersid)) {
 Forward($admin,$chat_id,$message_id);
-Sendmessage($chat_id,"Voice Send");	
+Sendmessage($chat_id,"voice Send");	
 }else{
   
 Sendmessage($chat_id,"*You Are Banned*");	

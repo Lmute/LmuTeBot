@@ -1,6 +1,6 @@
 <?php
 
-define('API_KEY','TOKEN');
+define('API_KEY','242765013:AAHTv0vTptrpafG4X4L8oONBWf1g2Zh-WBw');
 //----######------
 function makereq($method,$datas=[]){
     $url = "https://api.telegram.org/bot".API_KEY."/".$method;
@@ -63,7 +63,7 @@ $file = $update->message->document;
 $music = $update->message->audio;
 $voice = $update->message->voice;
 $forward = $update->message->forward_from;
-$admin = 216996658;
+$admin = 251862863;
 //-------
 function SendMessage($ChatId, $TextMsg)
 {
@@ -163,8 +163,8 @@ elseif($textmessage == 'Profile')
 	
 	elseif($textmessage == 'Contact Admin')
 {
-	$phone = '+989160730657';
-	$namea = 'Abbas :D';
+	$phone = '+989216358178';
+	$namea = 'MR.# | @ibornbot';
 makereq('sendContact',[
 	'chat_id'=>$chat_id,
 	'phone_number'=>$phone,
@@ -212,7 +212,7 @@ Forward($admin,$chat_id,$message_id);
 Sendmessage($chat_id,"Pm You send to Pv Admin ✅");
 }else{
   
-Sendmessage($chat_id,"❌*You Are Banned*❌");
+Sendmessage($chat_id,"*You Are Banned*");
 
     }
     }
@@ -226,10 +226,10 @@ $membersid= explode("\n",$txt);
 $substr = substr($text, 0, 28);
 	if (!in_array($chat_id,$membersid)) {
 Forward($admin,$chat_id,$message_id);
-Sendmessage($chat_id,"Shomare mord nazar ersal shod ✅");	
+Sendmessage($chat_id,"Contact Send");	
 }else{
   
-Sendmessage($chat_id,"❌*You Are Banned*❌");	
+Sendmessage($chat_id,"*You Are Banned*");	
 
 }
     }
@@ -245,10 +245,10 @@ $membersid= explode("\n",$txt);
 $substr = substr($text, 0, 28);
 	if (!in_array($chat_id,$membersid)) {
 Forward($admin,$chat_id,$message_id);
-Sendmessage($chat_id,"sticker mord nazar ersal shod ✅");	
+Sendmessage($chat_id,"Contact Send");	
 }else{
   
-Sendmessage($chat_id,"❌*You Are Banned*❌");	
+Sendmessage($chat_id,"*You Are Banned*");	
 
 }
     }
@@ -265,10 +265,10 @@ $membersid= explode("\n",$txt);
 $substr = substr($text, 0, 28);
 	if (!in_array($chat_id,$membersid)) {
 Forward($admin,$chat_id,$message_id);
-Sendmessage($chat_id,"photo mord nazar ersal shod ✅");	
+Sendmessage($chat_id,"Contact Send");	
 }else{
   
-Sendmessage($chat_id,"❌*You Are Banned*❌");	
+Sendmessage($chat_id,"*You Are Banned*");	
 
 }
     }
@@ -284,10 +284,10 @@ $membersid= explode("\n",$txt);
 $substr = substr($text, 0, 28);
 	if (!in_array($chat_id,$membersid)) {
 Forward($admin,$chat_id,$message_id);
-Sendmessage($chat_id,"voice mord nazar ersal shod ✅");	
+Sendmessage($chat_id,"voice Send");	
 }else{
   
-Sendmessage($chat_id,"❌*You Are Banned*❌");	
+Sendmessage($chat_id,"*You Are Banned*");	
 
 }
     }
@@ -302,10 +302,10 @@ $membersid= explode("\n",$txt);
 $substr = substr($text, 0, 28);
 	if (!in_array($chat_id,$membersid)) {
 Forward($admin,$chat_id,$message_id);
-Sendmessage($chat_id,"video mord nazar ersal shod ✅");	
+Sendmessage($chat_id,"video Send);	
 }else{
   
-Sendmessage($chat_id,"❌*You Are Banned*❌");	
+Sendmessage($chat_id,"*You Are Banned*");	
 
 }
     }
@@ -345,10 +345,10 @@ $membersid= explode("\n",$txt);
 $substr = substr($text, 0, 28);
 	if (!in_array($chat_id,$membersid)) {
 Forward($admin,$chat_id,$message_id);
-Sendmessage($chat_id,"location mord nazar ersal shod ✅");	
+Sendmessage($chat_id,"location Send");	
 }else{
   
-Sendmessage($chat_id,"❌*You Are Banned*❌");	
+Sendmessage($chat_id,"*You Are Banned*");	
 
 }
     }
@@ -357,7 +357,7 @@ Sendmessage($chat_id,"❌*You Are Banned*❌");
     	if($textmessage != "/ban" && $textmessage != "/unban")
     	{
 sendmessage($rpto,"$textmessage");
-sendmessage($chat_id,"پیغام شما ارسال شد");
+sendmessage($chat_id,"Send");
     	}
     	else
     	{
@@ -373,7 +373,7 @@ sendmessage($chat_id,"پیغام شما ارسال شد");
     	file_put_contents('banlist.txt',$addd);
     	{
 sendmessage($rpto,"*You Are Added to block list*");
-sendmessage($chat_id,"به لیست بلاک شده ها افزوده شد");
+sendmessage($chat_id,"Banned");
         }
     		}
 }
@@ -395,7 +395,7 @@ sendmessage($chat_id,"به لیست بلاک شده ها افزوده شد");
     	file_put_contents('banlist.txt',$adddd);
 }
 sendmessage($rpto,"*You Are UnBanned*");
-sendmessage($chat_id,"از لیست بلاک شده ها پاک شد");
+sendmessage($chat_id,"UnBanned");
     		}
     	}
 	}

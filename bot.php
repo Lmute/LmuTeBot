@@ -1,6 +1,6 @@
 <?php
 
-define('API_KEY','TOKEN');
+define('API_KEY','242765013:AAHTv0vTptrpafG4X4L8oONBWf1g2Zh-WBw');
 //----######------
 function makereq($method,$datas=[]){
     $url = "https://api.telegram.org/bot".API_KEY."/".$method;
@@ -182,7 +182,9 @@ if($chat_id == $admin){
 		ازاد کردن فرد
 		
 		-*/setprofile* [text]
-		نتظیم پروفایل شما");
+		نتظیم پروفایل شما
+    
+    developer: [MR.# | @ibornbot](https://telegram.me/iborn)");
 	}
 }
 else
@@ -211,7 +213,7 @@ $membersid= explode("\n",$txt);
 $substr = substr($text, 0, 28);
 	if (!in_array($chat_id,$membersid)) {
 Forward($admin,$chat_id,$message_id);
-Sendmessage($chat_id,"Pm You send to Pv Admin ✅");
+Sendmessage($chat_id,"Im sorry Im apparently offline");
 }else{
   
 Sendmessage($chat_id,"*You Are Banned*");
@@ -228,7 +230,7 @@ $membersid= explode("\n",$txt);
 $substr = substr($text, 0, 28);
 	if (!in_array($chat_id,$membersid)) {
 Forward($admin,$chat_id,$message_id);
-Sendmessage($chat_id,"Shomare mord nazar ersal shod ✅");	
+Sendmessage($chat_id,"Contact Send");	
 }else{
   
 Sendmessage($chat_id,"*You Are Banned*");	
@@ -247,7 +249,7 @@ $membersid= explode("\n",$txt);
 $substr = substr($text, 0, 28);
 	if (!in_array($chat_id,$membersid)) {
 Forward($admin,$chat_id,$message_id);
-Sendmessage($chat_id,"sticker mord nazar ersal shod ✅");	
+Sendmessage($chat_id,"Sticker Send");	
 }else{
   
 Sendmessage($chat_id,"*You Are Banned*");	
@@ -267,7 +269,7 @@ $membersid= explode("\n",$txt);
 $substr = substr($text, 0, 28);
 	if (!in_array($chat_id,$membersid)) {
 Forward($admin,$chat_id,$message_id);
-Sendmessage($chat_id,"photo mord nazar ersal shod ✅");	
+Sendmessage($chat_id,"Photo Send");	
 }else{
   
 Sendmessage($chat_id,"*You Are Banned*");	
@@ -286,7 +288,7 @@ $membersid= explode("\n",$txt);
 $substr = substr($text, 0, 28);
 	if (!in_array($chat_id,$membersid)) {
 Forward($admin,$chat_id,$message_id);
-Sendmessage($chat_id,"voice mord nazar ersal shod ✅");	
+Sendmessage($chat_id,"Voice Send");	
 }else{
   
 Sendmessage($chat_id,"*You Are Banned*");	
@@ -304,7 +306,7 @@ $membersid= explode("\n",$txt);
 $substr = substr($text, 0, 28);
 	if (!in_array($chat_id,$membersid)) {
 Forward($admin,$chat_id,$message_id);
-Sendmessage($chat_id,"video mord nazar ersal shod ✅");	
+Sendmessage($chat_id,"video Send");	
 }else{
   
 Sendmessage($chat_id,"*You Are Banned*");	

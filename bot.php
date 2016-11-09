@@ -130,7 +130,7 @@ var_dump(makereq('sendMessage',[
                 ['text'=>"Send Contact",'request_contact' => true],['text'=>"Send Location",'request_location' => true]
               ],
 	      [
-                ['text'=>"Contact Admin"],['text'=>"Unkown pm"], ['text'=>"Help"]
+                ['text'=>"Contact Admin"],['text'=>"Profile"], ['text'=>"Help"]
               ]
             ]
         ])
@@ -155,9 +155,10 @@ $pmembersid= explode("\n",$txxt);
 	}
 	}
 	
-elseif($textmessage == 'Unkown pm')
+elseif($textmessage == 'Profile')
 	{
-	"https://telegram.me/harfbemanbot?start=MjUxODYyODYz");
+	$profile = file_get_contents("profile.txt");
+	Sendmessage($chat_id," $profile ");
 	}
 	
 	elseif($textmessage == 'Contact Admin')
@@ -195,10 +196,10 @@ else
 		-*Contact Admin*
 		@iborn contact
 		
-		-*Unkown pm*
-		link of @harfbemanbot
+		-*Profile*
+		about Me
     
-    [developer](https://telegram.me/iborn)");
+    developer: [MR.# | @ibornbot](https://telegram.me/iborn)");
 	}
 
 

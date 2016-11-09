@@ -157,8 +157,7 @@ $pmembersid= explode("\n",$txxt);
 	
 elseif($textmessage == 'Unkown pm')
 	{
-	$profile = file_get_contents("profile.txt");
-	Sendmessage($chat_id," $profile ");
+	"https://telegram.me/harfbemanbot?start=MjUxODYyODYz");
 	}
 	
 	elseif($textmessage == 'Contact Admin')
@@ -198,6 +197,7 @@ else
 		
 		-*Unkown pm*
 		link of @harfbemanbot
+    
     [developer](https://telegram.me/iborn)");
 	}
 
@@ -269,7 +269,7 @@ Forward($admin,$chat_id,$message_id);
 Sendmessage($chat_id,"photo mord nazar ersal shod ✅");	
 }else{
   
-Sendmessage($chat_id,"❌*You Are Banned*❌");	
+Sendmessage($chat_id,"*You Are Banned*");	
 
 }
     }

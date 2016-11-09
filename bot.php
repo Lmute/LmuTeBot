@@ -109,7 +109,7 @@ var_dump(makereq('sendMessage',[
                 ['text'=>"Count Member"],['text'=>"Block List"]
               ],
 	      [
-                ['text'=>"Send To All"],['text'=>"Clean Blcok List"]
+                ['text'=>"Send To All"],['text'=>"Clean Block List"]
               ],
 	      [
 	        ['text'=>"Help"]
@@ -122,7 +122,7 @@ var_dump(makereq('sendMessage',[
  
 var_dump(makereq('sendMessage',[
         'chat_id'=>$update->message->chat->id,
-        'text'=>"Hi `#$name` \n\nPls send *PM*",
+        'text'=>"Hi `#$name` \nWelcome To @ibornbot\nSend Your *pm* And Wait",
         'parse_mode'=>'MarkDown',
         'reply_markup'=>json_encode([
             'keyboard'=>[
@@ -130,7 +130,7 @@ var_dump(makereq('sendMessage',[
                 ['text'=>"Send Contact",'request_contact' => true],['text'=>"Send Location",'request_location' => true]
               ],
 	      [
-                ['text'=>"Contact Admin"],['text'=>"Profile"], ['text'=>"Help"]
+                ['text'=>"Contact Admin"],['text'=>"Unkown pm"], ['text'=>"Help"]
               ]
             ]
         ])
@@ -155,7 +155,7 @@ $pmembersid= explode("\n",$txxt);
 	}
 	}
 	
-elseif($textmessage == 'Profile')
+elseif($textmessage == 'Unkown pm')
 	{
 	$profile = file_get_contents("profile.txt");
 	Sendmessage($chat_id," $profile ");
@@ -188,16 +188,17 @@ if($chat_id == $admin){
 else
 	{
 		Sendmessage($chat_id,"-*Send Contact*
-		ارسال شماره خود به ادمین
+		Send Your Contact
 		
 		-*Send Location*
-		ارسال مکان شما به ادمین
+		send Your Location
 		
 		-*Contact Admin*
-		ارسال شماره ادمین به شما
+		@iborn contact
 		
-		-*Profile*
-		نمایش اطلاعات ادمین");
+		-*Unkown pm*
+		link of @harfbemanbot
+    [developer](https://telegram.me/iborn)");
 	}
 
 
@@ -212,7 +213,7 @@ Forward($admin,$chat_id,$message_id);
 Sendmessage($chat_id,"Pm You send to Pv Admin ✅");
 }else{
   
-Sendmessage($chat_id,"❌*You Are Banned*❌");
+Sendmessage($chat_id,"*You Are Banned*");
 
     }
     }
@@ -229,7 +230,7 @@ Forward($admin,$chat_id,$message_id);
 Sendmessage($chat_id,"Shomare mord nazar ersal shod ✅");	
 }else{
   
-Sendmessage($chat_id,"❌*You Are Banned*❌");	
+Sendmessage($chat_id,"*You Are Banned*");	
 
 }
     }
@@ -248,7 +249,7 @@ Forward($admin,$chat_id,$message_id);
 Sendmessage($chat_id,"sticker mord nazar ersal shod ✅");	
 }else{
   
-Sendmessage($chat_id,"❌*You Are Banned*❌");	
+Sendmessage($chat_id,"*You Are Banned*");	
 
 }
     }
@@ -287,7 +288,7 @@ Forward($admin,$chat_id,$message_id);
 Sendmessage($chat_id,"voice mord nazar ersal shod ✅");	
 }else{
   
-Sendmessage($chat_id,"❌*You Are Banned*❌");	
+Sendmessage($chat_id,"*You Are Banned*");	
 
 }
     }
@@ -305,7 +306,7 @@ Forward($admin,$chat_id,$message_id);
 Sendmessage($chat_id,"video mord nazar ersal shod ✅");	
 }else{
   
-Sendmessage($chat_id,"❌*You Are Banned*❌");	
+Sendmessage($chat_id,"*You Are Banned*");	
 
 }
     }
@@ -348,7 +349,7 @@ Forward($admin,$chat_id,$message_id);
 Sendmessage($chat_id,"location mord nazar ersal shod ✅");	
 }else{
   
-Sendmessage($chat_id,"❌*You Are Banned*❌");	
+Sendmessage($chat_id,"*You Are Banned*");	
 
 }
     }
@@ -357,7 +358,7 @@ Sendmessage($chat_id,"❌*You Are Banned*❌");
     	if($textmessage != "/ban" && $textmessage != "/unban")
     	{
 sendmessage($rpto,"$textmessage");
-sendmessage($chat_id,"پیغام شما ارسال شد");
+sendmessage($chat_id,"Send");
     	}
     	else
     	{
@@ -373,7 +374,7 @@ sendmessage($chat_id,"پیغام شما ارسال شد");
     	file_put_contents('banlist.txt',$addd);
     	{
 sendmessage($rpto,"*You Are Added to block list*");
-sendmessage($chat_id,"به لیست بلاک شده ها افزوده شد");
+sendmessage($chat_id,"Banned");
         }
     		}
 }
@@ -395,7 +396,7 @@ sendmessage($chat_id,"به لیست بلاک شده ها افزوده شد");
     	file_put_contents('banlist.txt',$adddd);
 }
 sendmessage($rpto,"*You Are UnBanned*");
-sendmessage($chat_id,"از لیست بلاک شده ها پاک شد");
+sendmessage($chat_id,"UnBanned");
     		}
     	}
 	}
@@ -427,7 +428,7 @@ sendmessage($chat_id,"از لیست بلاک شده ها پاک شد");
          $addd = "false";
     	file_put_contents('booleans.txt',$addd);
     	}
- elseif($textmessage == 'Clean Blcok List')
+ elseif($textmessage == 'Clean Block List')
  if($chat_id == $admin){
  {
  file_put_contents('banlist.txt',$chat_id);

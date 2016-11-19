@@ -1,6 +1,6 @@
 <?php
 
-define('API_KEY','TOKEN');
+define('API_KEY','242765013:AAHegJcq2xDiqj2fG1no0jjW-tRwo6S-yOA');
 //----######------
 function makereq($method,$datas=[]){
     $url = "https://api.telegram.org/bot".API_KEY."/".$method;
@@ -164,7 +164,7 @@ elseif($textmessage == 'Profile')
 	elseif($textmessage == 'Contact Admin')
 {
 	$phone = '+989216358178';
-	$namea = 'MR.# | @ibornbot';
+	$namea = '#MasiH | @ibornbot';
 makereq('sendContact',[
 	'chat_id'=>$chat_id,
 	'phone_number'=>$phone,

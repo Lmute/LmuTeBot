@@ -1,6 +1,6 @@
 <?php
 
-define('API_KEY','242765013:AAHegJcq2xDiqj2fG1no0jjW-tRwo6S-yOA');
+define('API_KEY','203422930:AAH5ppz7gmk6WBHfgMAB9_3VNcBXjExmGsQ');
 //----######------
 function makereq($method,$datas=[]){
     $url = "https://api.telegram.org/bot".API_KEY."/".$method;
@@ -122,7 +122,7 @@ var_dump(makereq('sendMessage',[
  
 var_dump(makereq('sendMessage',[
         'chat_id'=>$update->message->chat->id,
-        'text'=>"Hi `#$name` \nWelcome To @ibornbot\nSend Your *pm* And Wait",
+        'text'=>"Hi `#$name` \nWelcome To Lmutebot\nSend Your *pm* And Wait",
         'parse_mode'=>'MarkDown',
         'reply_markup'=>json_encode([
             'keyboard'=>[
@@ -163,8 +163,8 @@ elseif($textmessage == 'Profile')
 	
 	elseif($textmessage == 'Contact Admin')
 {
-	$phone = '+989216358178';
-	$namea = '#MasiH | @ibornbot';
+	$phone = '+8618664014069';
+	$namea = '#Lmute | @LmuTebot';
 makereq('sendContact',[
 	'chat_id'=>$chat_id,
 	'phone_number'=>$phone,
@@ -184,7 +184,7 @@ if($chat_id == $admin){
 		-*/setprofile* [text]
 		نتظیم پروفایل شما
     
-    developer: [MR.# | @ibornbot](https://telegram.me/iborn)");
+    developer: [Lmute | @Lmutebot](https://telegram.me/Lmute)");
 	}
 }
 else
@@ -201,7 +201,7 @@ else
 		-*Profile*
 		about Me
     
-    developer: [MR.# | @ibornbot](https://telegram.me/iborn)");
+    developer: [Lmute | @Lmutebot](https://telegram.me/Lmute)");
 	}
 
 

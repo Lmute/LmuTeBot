@@ -63,7 +63,7 @@ $file = $update->message->document;
 $music = $update->message->audio;
 $voice = $update->message->voice;
 $forward = $update->message->forward_from;
-$admin = 251862863;
+$admin = 180122599;
 //-------
 function SendMessage($ChatId, $TextMsg)
 {
